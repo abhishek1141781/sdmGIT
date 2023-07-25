@@ -1,0 +1,64 @@
+tomcat-deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tomcat-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tomcat
+  template:
+    metadata:
+      labels:
+        app: tomcat
+    spec:
+      containers:
+        - name: tomcat-container
+          image: tomcat-server
+          ports:
+            - containerPort: 8080
+
+Dockerfile
+
+FROM tomcat:latest
+EXPOSE 8080
+
+
+HTTP Status 404 – Not Found
+Type Status Report
+
+Description The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.
+
+Apache Tomcat/10.1.11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+kubectl exec -it tomcat-deployment-d9c7b88d4-rplhv -- /bin/bash
+
+
+kubectl exec -it <pod-name> -- /bin/bash
+
+
+
+
+
+
+
+
+
+
+
+

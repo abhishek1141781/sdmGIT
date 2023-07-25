@@ -1,0 +1,12 @@
+  454  git init
+  455  git add .
+  456  git commit -m "git sdm exam abhishek"
+  457  git remote add origin https://github.com/abhishek1141781/sdmGIT
+  458  git push -u origin main
+  459  git push -u origin master
+  460  git status
+  461  git add .
+  462  git status
+  463  git commit -m "modified abhiCDAC.txt"
+  464  git push -u origin master
+  465  history > git_exam.txt
